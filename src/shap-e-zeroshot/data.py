@@ -13,40 +13,37 @@ def main():
     with open("../cap3d_split.json", "r") as f:
         data = json.load(f)
 
-    # Get first 100
-    items = data["train"][:100]
+    items = data["train"]
     uids = [item["uid"] for item in items]
 
-    # Split by type
-    objaverse_uids = [uid for uid in uids if len(uid) <= 32]
-    objaverse_xl_uids = [uid for uid in uids if len(uid) == 64]
+    # caption mapping
+    uid_to_caption = {item["uid"]: item["caption"] for item in items}
 
+    # slicing the objaverse - 600 images
+    objaverse_uids = [uid for uid in uids if len(uid) <= 32][:600]
+    
     print(f"Objaverse 1.0: {len(objaverse_uids)}")
-    print(f"Objaverse XL:  {len(objaverse_xl_uids)}")
 
     objects = {}
+    count = len(objaverse_uids)
 
     if objaverse_uids:
         v1_objects = objaverse.load_objects(
             uids=objaverse_uids,
-            download_processes=4
+            download_processes=8
         )
         objects.update(v1_objects)
 
-    if objaverse_xl_uids:
-        annotations = oxl.get_annotations()
-        subset = annotations[annotations["sha256"].isin(objaverse_xl_uids)]
 
-        xl_objects = oxl.download_objects(
-            objects=subset,
-            download_processes=4
-        )
+    output = []
+    for uid, filepath in objects.items():
+        if uid in uid_to_caption:
+            output.append({"uid": uid, "caption": uid_to_caption[uid], "filepath": filepath})
 
-        if xl_objects:
-            objects.update(xl_objects)
+    with open("downloaded_objects_split.json", "w") as f:
+        json.dump(output, f, indent=2)
 
-    print(f"Total downloaded: {len(objects)}")
-    print(objects)
+    print(f"Saved {len(output)} entries to downloaded_objects.json")
 
 
 if __name__ == "__main__":
