@@ -122,7 +122,7 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 <tr>
 <td style="border: none; vertical-align: top; padding: 10px;">
 
-**Shap-E**
+### Shap-E
 
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
