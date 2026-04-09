@@ -14,6 +14,8 @@
 
 Text-to-3D generation remains one of the most challenging frontiers in generative AI. Key obstacles include the scarcity of high-quality text-3D paired data, reliance on synthetic data and 2D image-text knowledge to infer 3D structure, and the **Janus problem** — where models lack global geometric coherence and produce view-inconsistent shapes.
 
+
+
 This project investigates these limitations by evaluating and fine-tuning three publicly available text-to-3D models on the [Cap3D](https://github.com/crockwell/Cap3D) dataset — a large-scale collection of 3D objects from Objaverse paired with detailed natural language captions.
 
 **Research Questions:**
@@ -30,11 +32,21 @@ This project investigates these limitations by evaluating and fine-tuning three 
 | **Point-E** | OpenAI / Hugging Face | Yes |
 | **Fantasia3D** | Hugging Face | Zero-shot only |
 
+![Models Overview](text3d.png)
+
 ---
 
 ## Dataset
 
 **Cap3D** was chosen for its large-scale captioned 3D data, enabling an in-depth analysis of how richer natural language descriptions affect text-to-3D semantic alignment. It provides per-object captions generated from multi-view renders of Objaverse assets using BLIP-2 and GPT-4.
+
+![Cap3D Sample Objects](cap3d.png)
+
+**Sample:**
+
+| Object | Caption |
+|:---:|---|
+| ![](src/shap-e-zeroshot/previews_gif/105_e922075d.gif) | *"A blue, dinosaur-like creature with a segmented brown shell on its back, detailed with claws on its limbs and tail."* |
 
 ---
 
