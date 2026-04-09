@@ -26,13 +26,17 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 ## Models
 
+![Models Overview](text3d.png)
+
+<div align="center">
+
 | Model | Source | Fine-Tuned |
 |---|---|---|
 | **Shap-E** | OpenAI / Hugging Face | Yes |
 | **Point-E** | OpenAI / Hugging Face | Yes |
 | **Fantasia3D** | Hugging Face | Zero-shot only |
 
-![Models Overview](text3d.png)
+</div>
 
 ---
 
@@ -113,9 +117,10 @@ python view.py
 ---
 
 ## Results
+<div align="center">
+
 ### Shap-E
 
-<div align="center">
 
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
@@ -126,11 +131,9 @@ python view.py
 | R-Precision ↑ | 0.1600 | 0.1600 | +0.0000 | Semantic |
 | LPIPS ↓ | 0.2624 | 0.2633 | +0.0009 | Perceptual |
 
-</div>
 
 ### Point-E
 
-<div align="center">
 
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
@@ -138,11 +141,9 @@ python view.py
 | CLIP Score ↑ | 0.2650 | **0.2970** | +0.0320 | Semantic |
 | CLIP Similarity ↑ | 0.9550 | **0.9560** | +0.0010 | Semantic |
 
-</div>
 
 ### Fantasia3D (Zero-Shot Only)
 
-<div align="center">
 
 | Metric | Zero-Shot | Category |
 |---|---|---|
