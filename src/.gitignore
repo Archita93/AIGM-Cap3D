@@ -23,7 +23,9 @@ checkpoints/
 checkpoints_optim_2/
 checkpoints_optim_3/
 
+*.csv
 *.tsv
+*.json
 data/
 datasets/
 
