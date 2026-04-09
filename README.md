@@ -26,8 +26,6 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 ## Models
 
-![Models Overview](text3d.png)
-
 <div align="center">
 
 | Model | Source | Fine-Tuned |
@@ -37,6 +35,10 @@ This project investigates these limitations by evaluating and fine-tuning three 
 | **Fantasia3D** | Hugging Face | Zero-shot only |
 
 </div>
+
+
+
+![Models Overview](text3d.png)
 
 ---
 
