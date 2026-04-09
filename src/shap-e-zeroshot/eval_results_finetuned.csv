@@ -1,0 +1,102 @@
+uid,caption,chamfer,clip_score,clip_similarity,f_score,clip_r_precision,lpips
+748eefe048294feaab81670658a94642,Human lungs with the trachea and bronchi visible.,0.010846,0.2147,0.6655,0.1289,0.0,0.2588
+52903d6a7acd4e0b8489748500c0a845,"A small indoor space with yellowish walls, a tiled ceiling, and a carpeted floor containing office furniture and equipment.",0.065938,0.1963,0.688,0.0197,0.0,0.3049
+d4894bff905442dab5b845d1e6716938,A black dragon with wings and a horned skull.,0.012617,0.2678,0.7788,0.1799,0.0,0.2126
+c74fee4e88914d11a69356826b8bd72e,"A sculpted figure resembling a mythical or fantasy creature with horns, a muscular body, and a flat rectangular base.",0.028963,0.2323,0.8032,0.064,0.0,0.2145
+eb960bb989304494b94d43c0889ec679,"A brown, striped Egyptian eagle sarcophagus with a wooden shell and a square shape.",0.020649,0.1885,0.8726,0.0822,0.0,0.2679
+3d150d0d186f4db8b5698523758805a3,"A white, nearly spherical object with slightly faceted edges.",0.000736,0.3149,0.8462,0.4741,1.0,0.0284
+07d38555cae844f7abdeace9d19c4777,"A round, flat object with a patterned surface and three cylindrical vertical supports.",0.080488,0.2869,0.7852,0.0,0.0,0.2783
+16d8d90744e7424b8f91505f545a8d10,A geometric sculpture consisting of two stacked irregular polyhedra with sharp edges and flat faces.,0.016047,0.2493,0.7446,0.0875,0.0,0.284
+7bf1b6ba1fc54853bb61fb004f801bcc,A gold-plated carriage with people on it.,0.014762,0.2124,0.7251,0.1242,0.0,0.2088
+f3f5325fb6444bd9bd550acac1e7edef,"A stylized skull with decorative patterns and symbols, featuring clusters of red berries and geometric designs.",0.00603,0.302,0.8813,0.1939,0.0,0.1241
+e7ad61015cc34c458f1c7319227417f9,"A detailed suburban residential area featuring houses, roads, roundabouts, and surrounding agricultural fields with patches of greenery.",0.059704,0.2312,0.8496,0.0125,0.0,0.2657
+17790e25e94c495a82f74937c467d4ad,A rectangular stone plaque featuring a small reclining lion sculpture with a worn surface and an inscription plaque on the front.,0.018354,0.2015,0.7817,0.0755,0.0,0.3194
+8fad1f82a2734fe19fdbb94f055e9e0d,"A portable toilet with a bathroom door, toilet, sink, and mirror.",0.062513,0.2157,0.8071,0.0693,0.0,0.3673
+58c912f75b5d49d0984d7c935d350526,A green sports car.,0.055821,0.2489,0.8096,0.0716,0.0,0.3748
+a3eb79c9cb834dac88d41b91cbcef65b,A rectangular platform featuring a peripheral series of small house-shaped structures and tree-like forms.,0.043385,0.2344,0.8174,0.0529,0.0,0.3278
+043bcfdbdfe54cf7b520e3c66215754d,"A rectangular panel with a grey frame and two distinct filled sections: a larger black area below and a smaller black area above, separated by a horizontal grey divider.",0.098113,0.2698,0.8213,0.0285,0.0,0.441
+83837034989a469788efb02aef11bc2e,"A compact home office setup with a wooden desk, computer monitor, office chair, and various desk accessories next to a window with red curtains.",0.005891,0.1886,0.8599,0.1191,0.0,0.2289
+b9eeffb434c141cc96caf4d77eae0ef7,"A modern, rectangular multi-room building with white exterior walls and multiple large windows, featuring a detailed interior layout including office and common areas.",0.015239,0.2095,0.8071,0.0633,0.0,0.3102
+275ffb432a6c4691a312837c850e608d,A guitar with a rounded body and a long neck.,0.048463,0.3296,0.7603,0.0858,1.0,0.2691
+1a687ba23aef4dd79c81fba97757b6a7,A sword.,0.066451,0.2932,0.9097,0.0472,0.0,0.265
+3b308cdfb53446f28d3c0e17cffe50e2,"A modern two-story house surrounded by dense hedges and trees, featuring multiple outdoor spaces, a pool, and a spacious layout with large windows.",0.040864,0.1455,0.8379,0.0661,0.0,0.3201
+fe59fe04725446479bc1115bb12d0ad8,A tooth.,0.023971,0.3025,0.8843,0.0844,0.0,0.2355
+79b10bf00f0b46dea7565bfb39d884c5,A snowman with a hat and scarf.,0.009388,0.1917,0.6328,0.1036,0.0,0.2426
+291630a8dd4f4edfbb981db241b59409,"A Mario Bros mushroom with a mouth, in a pot on a wooden base.",0.013761,0.2141,0.6191,0.0846,0.0,0.2579
+57c2a4bc856b4404aea7b61aaea7973e,"A compact, rectangular workshop or storage shed with open sides contains various tools, equipment, and materials cluttered inside.",0.03097,0.2502,0.7915,0.0088,0.0,0.3525
+299a471769584830b5bb14cf879a16fb,"A brown mushroom with a convex cap and a textured surface, gills underneath, and a stout white stem.",0.005312,0.2705,0.7769,0.1175,0.0,0.1104
+f56bb6b2a298425dbc830992fa28a163,"A small, worn tricycle on a section of cobblestone pavement.",0.042365,0.1714,0.8354,0.0588,0.0,0.3131
+c23ed8d89e6142bc8cc3830701f424ee,"Ancient carved stone artifact with primitive pictographs, weathered surface, and varying shades of dark brown and gray.",0.076759,0.2433,0.7505,0.0378,0.0,0.3226
+9731111f9d2d4bc2a39530457fe69890,A serrated knife with a cylindrical handle featuring distinct raised sections along the blade and handle.,0.09621,0.3079,0.8833,0.0503,0.0,0.3126
+a11da70bdc6c41078e079c2c4ce26923,"A modern kitchen island featuring a white base with cabinets and drawers, topped by a wide marble countertop, accompanied by a decorative vertical panel with a stone-like finish.",0.009571,0.1654,0.7773,0.0893,0.0,0.2337
+3086a712c41b47e58d994e4a83b910cb,"Textured ceramic aroma lamp with star and seashell motifs, featuring an opening for a candle and perforations that emit light.",0.01674,0.2498,0.8145,0.0993,0.0,0.3194
+aaf48fd752bb4a2d85b435c191a40852,"A multi-story building structure with evenly spaced floors and supporting columns, featuring an internal layout on the top floor.",0.004979,0.2423,0.8882,0.0949,0.0,0.2553
+3f7cfb377bb74b49aaf3a98e8933e94b,"A porous, irregularly shaped light-colored object with multiple hollow cavities and a rough surface.",0.008703,0.2725,0.7729,0.1374,0.0,0.1559
+6110f91873ac449d9f1760a5154d15b1,"A multi-level steel frame structure with distinct sections and open spaces, featuring visible beams, trusses, and framework elements.",0.052932,0.2844,0.8784,0.0214,0.0,0.3624
+fb03ccafdbf240d58d1a842ced5aff4a,"Glowing yellow character with abstract, simplified human features and a red line across its face.",0.053974,0.2491,0.751,0.0243,0.0,0.2644
+76b8b232c4aa4a91999d949f2cf943d4,"Shiny apple with a pinkish and light purple hue, featuring a smooth surface with subtle speckles.",0.002014,0.3423,0.8115,0.2518,1.0,0.1004
+c2bc7bb73af846aca4b5fcdb9313acc0,"A square, marble-like plaque with a raised ornate floral design in the center.",0.066277,0.1968,0.8423,0.045,0.0,0.34
+879fd5fb55fd4636b2372b5f679b391e,"Rectangular paper banknote with intricate engravings featuring classical architectural elements, allegorical figures, and numerical values. The note displays monochrome artwork on one side and colored ornamental designs and text on the other.",0.034231,0.1635,0.8276,0.0461,0.0,0.2384
+eb7f93d3e8f54bcd98643db299af568b,A white ship's wheel.,0.024185,0.3188,0.834,0.0997,1.0,0.1913
+f8bcc159023a461f930e497f94715d7d,A small white shed with a metal frame and roof.,0.046278,0.2544,0.8789,0.0469,0.0,0.2817
+32b90303ff354ba39350b98062388055,Marble statue of a draped female figure featuring classical proportions and detailed flowing garments.,0.07072,0.203,0.7837,0.0424,0.0,0.3467
+2d02985030804209a26c2c53b96a06f9,A small black plastic wedge-shaped doorstop with a ridged base and a slanted top surface.,0.010283,0.3352,0.918,0.1086,1.0,0.1678
+02c44811c37d495ebb018cede449d2cb,A rectangular wall panel with weathered bricks and patches of moss or discoloration.,0.080994,0.2357,0.9102,0.0304,0.0,0.292
+645615ad7b5a44fd9d787b481a8c070e,A segmented humanoid figure with distinct cyan joints and a magenta torso and limbs.,0.006707,0.2805,0.874,0.1824,1.0,0.1589
+3382f730f9044e75b9469a127221bc2b,A colorful numbered cube.,0.011696,0.3276,0.9312,0.0482,1.0,0.297
+fe9d03a139684c319c4e1b83b075b8ad,"A rectangular beam with an open, recessed channel running along one side.",0.069896,0.261,0.771,0.033,0.0,0.4136
+f834df7e8bf246fbb11bdcfd654eb450,"A vertical metallic rod with a wooden, intricately carved centerpiece that has symmetrical extensions connecting the two segments of the rod.",0.114435,0.2476,0.8076,0.0257,0.0,0.29
+458b7f0e582e4962bcdc65a384e5a986,A multi-level structural framework with rectangular platforms and numerous vertical supports.,0.019437,0.3301,0.8828,0.0567,0.0,0.3662
+bb853e7e8bd44a08a9c6090c21000b26,"A modern sniper rifle with a long barrel, a telescopic sight, and a skeletal stock design.",0.084903,0.2693,0.814,0.0466,0.0,0.2234
+09d790d57ff64164946104f68d1320ae,A small white refrigerator.,0.023036,0.2883,0.8984,0.0809,0.0,0.3248
+25708ce979534e179a442087c87b5a45,"A small, curved, metallic object resembling a stylized fish with a hole near its head and a detailed surface.",0.009317,0.2664,0.8232,0.1526,0.0,0.1718
+9b58e8b3ca764bd58c7f9bac0a24e592,A statue beside a tree.,0.017684,0.2069,0.7148,0.0689,0.0,0.2776
+039fe32530d24025a8a2b3333c5b05ad,A spider with a rounded body and eight legs.,0.016235,0.2764,0.8354,0.0769,1.0,0.2479
+8bd675e4479c49b1ab326d1c2aec56c8,A small wooden wagon with wheels.,0.012255,0.3235,0.8706,0.0922,0.0,0.1857
+f85239d826b84c57ae1525947e97cb1a,"A ring featuring a central gemstone held by a prong setting, with additional smaller stones along the band.",0.047035,0.3276,0.8203,0.0912,1.0,0.2268
+d9fc4466b14e4dcfb45cc1745cc68c9a,"A multi-story house with a pitched roof, surrounded by landscaped greenery including trees, bushes, a driveway with a parked car, and a pond.",0.027479,0.1552,0.686,0.0771,0.0,0.3462
+f4c3a936dae745e08405cf2fd820b89c,"A short, stout vase with a wide body, slightly flared rim, and narrow base.",0.015503,0.2273,0.7275,0.0789,0.0,0.3159
+ac65b5cc844241088730856a284896a1,A wooden barrel with ropes.,0.004651,0.3367,0.8315,0.1378,1.0,0.2105
+be7254af722b43bc92d55e048f68911b,"A small, circular graveyard scene with a stone tombstone, pumpkins, a green glowing substance, white ghost figures, and a black pointed fence surrounding the area.",0.021954,0.2053,0.7886,0.114,0.0,0.2549
+fc83f2dbaf914455827a347fecdcc8a1,"Sculpted pair of animal heads, one resembling a snarling wolf or fox and the other a fierce bird of prey.",0.029546,0.2883,0.8232,0.0319,0.0,0.2345
+e64169fd5d69432d936e7419a7fe5c64,"A small house with a wooden staircase, baby crib, table with a clock, and a ceiling light.",0.013882,0.2544,0.8101,0.0448,0.0,0.2616
+1c8e749463604c4db95988f6ed054cd0,A white castle with three towers and turrets.,0.014327,0.2206,0.7905,0.0796,0.0,0.2366
+2ce1066de1b4484286e990c1e956ba06,"A multi-faceted, irregularly shaped object with a generally rounded form and several cutouts and protrusions.",0.006092,0.2781,0.7798,0.1327,0.0,0.17
+092a983668804938b389eb2900ca6d36,"A smooth, elongated ellipsoid shape.",0.024108,0.2815,0.7192,0.0611,0.0,0.1462
+9954259d0dbe4fe8bc8f2e8606a4d782,"Carved wooden religious scene featuring four human figures, with one figure standing and the others seated or kneeling in reverent poses.",0.036408,0.1904,0.7979,0.0807,0.0,0.304
+78764e339a8e4b499c770706296af701,"Wireframe eyeglasses with ornate, plant-like embellishments on the frames.",0.040027,0.2976,0.771,0.0153,1.0,0.3169
+6470747e082243e1a1e27e3e24570518,"A stylized badminton set, including two rackets, two shuttlecocks, and a net on a flat green surface.",0.039478,0.2935,0.8198,0.0064,1.0,0.2203
+8429ea629dda4092b90b412a669b48b1,"A rectangular ceiling light fixture with a central translucent panel and surrounding housing, featuring a combination of white, black, and blue components.",0.018132,0.2405,0.8745,0.0838,0.0,0.3502
+7fd49fe89900452f886d0baf31124361,"A minimalist staircase with wooden steps and a black metal railing, enclosed by white walls and surrounded by a black frame structure.",0.018662,0.2108,0.8438,0.1158,0.0,0.28
+b70aa3280c154f669f3a129d4d64153f,A yellow screw with a golden sphere logo.,0.010314,0.269,0.8286,0.1087,0.0,0.1764
+9f1e686dce50403bbea7b94174d28627,"A detailed architectural complex with multiple buildings, including a central structure, smaller adjoining units, open green spaces, and recreational courts, all situated on a landscaped base.",0.051184,0.2112,0.8237,0.0388,0.0,0.2406
+fba45572d694408188924e9df9468cdf,"A brown, blocky chair with a high backrest and armrests.",0.029059,0.2913,0.8398,0.0342,0.0,0.2888
+f5d77b9f0e354249b456342709ba19f5,A grid-like structure composed of rectangular pink platforms supported by numerous thin grey vertical rods of varying height.,0.018007,0.2915,0.9131,0.0524,0.0,0.3873
+085fecf9713c460788fcfae43d6c08e7,Black silhouette of a man wearing a helmet and holding a ball.,0.048417,0.2573,0.8838,0.078,0.0,0.2664
+cb0db896db4b4f7dbb6ac3a4b8784124,A wall-mounted holder containing multiple boxes of disposable gloves alongside a white dispenser unit.,0.032397,0.2234,0.6519,0.0759,0.0,0.3387
+f0928a32da734f359f471aa835f7fbf3,"A distorted representation of an urban area featuring buildings, some greenery, and pathways.",0.019754,0.2551,0.8291,0.065,0.0,0.2462
+b767235b6b69441ba6d0e548513dfed5,A yellow plastic disc featuring a dog silhouette.,0.069002,0.2654,0.8643,0.0513,0.0,0.2632
+81c81a8ce03347b19369aea3f4552a7d,"A translucent, irregular quadrilateral with a wavy surface.",0.026357,0.2654,0.8042,0.0558,0.0,0.3266
+4dec28557b884962badc466c87bd3360,A castle tower with crenellated battlements and multiple turrets.,0.02807,0.1754,0.6895,0.0368,0.0,0.332
+2f761f9165384a0e8f51abafd1247e35,A three-tiered rectangular pedestal with thick horizontal slabs separating the sections and supporting a thin vertical panel on top.,0.014618,0.2397,0.7773,0.0608,0.0,0.3768
+89def6bf65fa4f2da948196dd172f2e9,"A two-story modern building with a flat, overhanging roof and a wraparound balcony on the second floor.",0.010742,0.2008,0.8857,0.0706,0.0,0.2895
+1b3aec00ac104972bc1daa8d0952fc25,"A yellow bunny with outstretched arms, resembling a Five Nights at Freddy's character.",0.036353,0.2898,0.8359,0.1162,0.0,0.2472
+1bc18d538ef343cc94671ae091f294e1,"A slender, long sword with a silver blade and a brown handle featuring a loop pommel and a crossguard with two curved quillons.",0.039887,0.3123,0.8926,0.0771,1.0,0.1557
+929e8afe21bd4505be046857f2a57e90,"A small animal resembling a hippo with a rounded body, four legs, and a short tail.",0.011698,0.2935,0.8379,0.1145,1.0,0.2675
+1d08364626bd4a1c9e5dd59854c31db3,"A geometric shape with a trapezoidal top surface, angled sides, and a protruding tab-like feature on one edge.",0.016594,0.2666,0.8389,0.1722,0.0,0.1531
+65239475ac9f400293b9f2cff7cc7cee,Small white lantern with a wire handle hanging on a gray background.,0.012562,0.2727,0.7749,0.073,0.0,0.2629
+4483a66504a54435a31314a72648ffa4,A weathered orange-brown clay pot with intricate carved patterns and a broken side.,0.010124,0.2356,0.8188,0.1059,0.0,0.174
+dd5070e4d172494096fdd4a81d6d1655,A person in various poses.,0.080315,0.209,0.814,0.0744,0.0,0.2618
+12bebada1c9a4d379a3327cfd0ddb898,"Terrain displaying undulating elevated surfaces with distinct ridges and valleys, featuring a mix of smooth slopes and steep inclines.",0.067968,0.2435,0.8369,0.033,0.0,0.3239
+9834daea8751473cb3d1328aea9ee2c4,A green triangular polyhedral object resembling an umbrella.,0.02947,0.3291,0.8286,0.0774,1.0,0.2393
+1d1472e79252421d9fbf686add446a2d,A snow-covered landscape featuring a small cluster of connected barn-like buildings with dark roofs.,0.054507,0.1489,0.7642,0.0499,0.0,0.3118
+5ec5de479eec48408e51bf3384de4689,"A small, furnished room with beige walls, a window with blinds, a wooden floor, and visible furniture, including a bed and a storage unit.",0.030357,0.2119,0.7554,0.033,0.0,0.3588
+e2076aff199342e4b5c8b0c9ed3c87f1,"An orange-handled wooden spoon, an orange funnel with a wooden handle, and a small orange lollipop on a stick.",0.071487,0.3093,0.8735,0.0245,1.0,0.2612
+a15f77263ab64b08935195739e2ebad4,"A metallic, irregularly shaped object with a surface and some patterned grooves on one side.",0.012825,0.2424,0.8291,0.0749,0.0,0.1777
+161ecf7f6a6647ae88a8a9dbba6f0cc5,"A character resembling Yoda, featuring green skin, large pointed ears, and wearing a beige robe and pants.",0.038852,0.2007,0.7759,0.0517,0.0,0.2519
+ea3675fcadfb457f89d7cd21eacdbcda,"An ancient, weathered clay pot with a rounded body and a partially broken rim, featuring a rough, mottled surface with patches of discoloration.",0.004265,0.2246,0.8433,0.1639,0.0,0.1165
+fd597b8a437e41e4bc62bcadf5c6d03d,A textured human hand.,0.042126,0.2625,0.7681,0.0597,0.0,0.2141
+1d21b19a090946d4bfe8dee4d402e8e2,"A twisted, textured torus with an open central hole and smooth white base edges.",0.019305,0.2712,0.835,0.0928,0.0,0.2232
+952a7beccf3b4cc68fc66758c981c7c0,A weathered wooden rowboat with red trim and black tires attached along the sides as bumpers.,0.055628,0.2402,0.7705,0.0579,0.0,0.2395
+6eb5b2cb8dd440bfb8495a22d8d5ca48,White plastic wall-mounted enclosure resembling a shield.,0.054701,0.2947,0.7515,0.0374,0.0,0.2706
+AVERAGE,,0.03342321000000001,0.251872,0.8105709999999999,0.079624,0.16,0.26242899999999997
