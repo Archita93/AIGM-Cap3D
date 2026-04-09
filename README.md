@@ -58,6 +58,8 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 ## Setup & Installation
 
+### Shap-E
+
 > The following setup instructions apply to the **Shap-E** pipeline. Point-E and Fantasia3D were evaluated separately using their respective repositories.
 
 **Prerequisites:** Python 3.12.3 · CUDA-compatible GPU · [Blender 3.3.1](https://www.blender.org/download/releases/3-3/)
@@ -102,6 +104,7 @@ python view.py
 
 ## Methodology
 
+### Shap-E
 Shap-E was fine-tuned using selective parameter tuning — only the final transformer blocks and text-latent projection layers were updated to preserve pre-trained 3D priors while adapting to Cap3D captions.
 
 > **Zero-Shot:** Guidance Scale: 17.5 · Num Steps: 64 · Sigma Range: 1e-3 to 160 · Eval Set: N = 100  
@@ -167,6 +170,7 @@ Fine-tuning shows the clearest gains for **Point-E** (CLIP Score +0.032, Chamfer
 
 ## Qualitative Comparison
 
+### Shap-E
 Ground truth, zero-shot, and fine-tuned 3D generations conditioned on the original Cap3D caption.
 
 | Caption | Ground Truth | Zero-Shot | Fine-Tuned |
@@ -178,6 +182,8 @@ Ground truth, zero-shot, and fine-tuned 3D generations conditioned on the origin
 ---
 
 ## Directory Structure
+
+### Shap-E
 
 ```
 AIGM-Cap3D/
