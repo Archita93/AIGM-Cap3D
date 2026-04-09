@@ -60,7 +60,7 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 ### Shap-E
 
-> The following setup instructions apply to the **Shap-E** pipeline. Point-E and Fantasia3D were evaluated separately using their respective repositories.
+> The following setup instructions apply to the **Shap-E** pipeline. Point-E was evaluated separately using their respective repositories.
 
 **Prerequisites:** Python 3.12.3 · CUDA-compatible GPU · [Blender 3.3.1](https://www.blender.org/download/releases/3-3/)
 
@@ -74,10 +74,41 @@ cd src/shap-e-zeroshot/shap-e
 pip install -e .
 ```
 
+### Fantasia3D
+
+> The following setup instructions apply to the **Fantasia3D** pipeline.
+
+**Prerequisites:** Python 3.9 · CUDA 11.8 · Visual Studio Build Tools 2019 (MSVC v142)
+
+```bash
+# Fantasia3D setup
+cd src/fantasia3d
+pip install -r requirements.txt
+git clone https://github.com/Gorilla-Lab-SCUT/Fantasia3D.git
+```
+
+Open a new terminal: x64 Native Tools Command Prompt for VS 2019
+
+```bash
+# In Fantasia3D model directory
+set TORCH_CUDA_ARCH_LIST=7.5
+set CUDAHOSTCXX=cl.exe
+set DISTUTILS_USE_SDK=1
+set MSSdk=1
+set NVCC_FLAGS=-allow-unsupported-compiler
+
+pip install wheel
+pip install --no-cache-dir git+https://github.com/NVlabs/nvdiffrast.git --no-build-isolation
+pip install --no-cache-dir git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch --no-build-isolation
+
+pip install -r requirements.txt
+```
+
 ---
 
 ## How to Run
 
+### Shap-E
 All scripts are located in `src/shap-e-zeroshot/`.
 
 ```bash
@@ -100,6 +131,17 @@ python eval.py
 python view.py
 ```
 
+### Fantasia3D
+All scripts are located in `src/fantasia3d/`
+
+```bash
+# 1. Zero-shot inference
+python run_zeroshot.py
+
+# 2. Render / view generated shapes
+python visualization.py
+```
+
 ---
 
 ## Methodology
@@ -117,6 +159,11 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 <img src="https://raw.githubusercontent.com/Archita93/AIGM-Cap3D/main/src/shap-e-zeroshot/graphs/training_curve_best.png" width="500"/>
 </div>
 </details>
+
+### Fantasia3D
+Due to significant computational overhead, Fantasia3D was evaluated exclusively in a zero-shot capacity without further fine-tuning.
+
+> **Zero-Shot:** Iter: 500 ·Eval Set: N = 10 
 
 ---
 
@@ -179,38 +226,56 @@ Ground truth, zero-shot, and fine-tuned 3D generations conditioned on the origin
 | A small indoor space with yellowish walls, a tiled ceiling, and a carpeted floor containing office furniture and equipment. | ![](src/shap-e-zeroshot/previews_gif/01_52903d6a.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/01_52903d6a.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/01_52903d6a.gif) |
 | A black dragon with wings and a horned skull. | ![](src/shap-e-zeroshot/previews_gif/02_d4894bff.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/02_d4894bff.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/02_d4894bff.gif) |
 
+### Fantasia3D
+Ground truth and zero-shot 3D generations conditioned on the original Cap3D caption.
+
+| Caption | Ground Truth | Zero-Shot |
+|---|:---:|:---:|
+| Human lungs with the trachea and bronchi visible. | ![](src/fantasia3d/results/748eefe048294feaab81670658a94642_gt_views.png) | ![](src/fantasia3d/results/748eefe048294feaab81670658a94642_zeroshot_views.png)
+
 ---
 
 ## Directory Structure
 
-### Shap-E
-
 ```
 AIGM-Cap3D/
 ├── src/
-│   └── shap-e-zeroshot/
-│       ├── generated/                    # Zero-shot generated meshes
-│       ├── graphs/                       # Training loss curves
-│       ├── latents/                      # Encoded shape latents
-│       ├── predicted_previews/           # Zero-shot preview renders
-│       ├── predicted_previews_finetuned/ # Fine-tuned preview renders
-│       ├── predicted_previews_guidance/  # Guidance zero-shot renders
-│       ├── previews_gif/                 # Ground truth preview renders
-│       ├── scripts/
-│       │   ├── data.py                   # Dataset preparation
-│       │   ├── eval.py                   # Evaluation metrics
-│       │   ├── fine-tune.py              # Fine-tuning pipeline
-│       │   ├── inference-post-train.py   # Fine-tuned model inference
-│       │   ├── inference-zero-shot.py    # Zero-shot baseline inference
-│       │   └── view.py                   # Render / visualize shapes
-│       ├── shap-e/                       # Shap-E submodule (OpenAI)
-│       ├── shap_e_model_cache/           # Cached weights (not tracked)
-│       ├── comparison.ipynb              # Visual comparison notebook
-│       ├── eval_results_finetuned.csv
-│       └── eval_results_zeroshot.csv
+│   ├── shap-e-zeroshot/
+│   |   ├── generated/                    # Zero-shot generated meshes
+│   |   ├── graphs/                       # Training loss curves
+│   |   ├── latents/                      # Encoded shape latents
+│   |   ├── predicted_previews/           # Zero-shot preview renders
+│   |   ├── predicted_previews_finetuned/ # Fine-tuned preview renders
+│   |   ├── predicted_previews_guidance/  # Guidance zero-shot renders
+│   |   ├── previews_gif/                 # Ground truth preview renders
+│   |   ├── scripts/
+│   |   │   ├── data.py                   # Dataset preparation
+│   |   │   ├── eval.py                   # Evaluation metrics
+│   |   │   ├── fine-tune.py              # Fine-tuning pipeline
+│   |   │   ├── inference-post-train.py   # Fine-tuned model inference
+│   |   │   ├── inference-zero-shot.py    # Zero-shot baseline inference
+│   |   │   └── view.py                   # Render / visualize shapes
+│   |   ├── shap-e/                       # Shap-E submodule (OpenAI)
+│   |   ├── shap_e_model_cache/           # Cached weights (not tracked)
+│   |   ├── comparison.ipynb              # Visual comparison notebook
+│   |   ├── eval_results_finetuned.csv
+│   |   └── eval_results_zeroshot.csv
+│   └── fantasia3d/
+│       ├── data/
+│       │   ├── raw/                      # Raw data downloaded from corresponding github/huggingface
+│       │   ├── processed                 # Processed data used for evaluation
+│       │   └── outputs                   # Generated objects
+│       ├── Fantasia3D/                   # Fantasia3D submodule
+│       ├── results/                      # Visualizations and evaluation metrics
+│       ├── config.py                     # Config
+│       ├── generate.py                   # Generate 3D meshes
+│       ├── evaluate.py                   # Evaluation metrics
+│       ├── run_zeroshot.py               # Zero-shot inference
+│       ├── visualization.py              # Visualize objects
+│       └── requirements.txt
 ├── cap3d_splits.py
 ├── downloaded_objects_split.json         
-├── requirements.txt
+├── requirements.txt                      # Shap-E dependencies
 └── .gitignore
 ```
 
