@@ -260,6 +260,7 @@ AIGM-Cap3D/
 │   |   ├── comparison.ipynb              # Visual comparison notebook
 │   |   ├── eval_results_finetuned.csv
 │   |   └── eval_results_zeroshot.csv
+|   |
 │   └── fantasia3d/
 │       ├── data/
 │       │   ├── raw/                      # Raw data downloaded from corresponding github/huggingface
