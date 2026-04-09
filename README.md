@@ -98,28 +98,25 @@ python view.py
 
 ### Shap-E · Zero-Shot Hyperparameters
 
-| Parameter | Value | Rationale |
-|---|---|---|
-| Guidance Scale | 17.5 | Forces strict adherence to the text prompt |
-| Num Steps | 64 | Balances generation speed with geometric detail |
-| Sigma Range | 1e-3 to 160 | Defines the diffusion noise schedule for shape resolution |
-| Evaluation Set | N = 100 | Results averaged over 100 diverse prompts |
+- **Guidance Scale:** 17.5 — Forces strict adherence to the text prompt
+- **Num Steps:** 64 — Balances generation speed with geometric detail
+- **Sigma Range:** 1e-3 to 160 — Defines the diffusion noise schedule for shape resolution
+- **Evaluation Set:** N = 100 — Results averaged over 100 diverse prompts
 
 ### Shap-E · Fine-Tuning Hyperparameters
 
-| Parameter | Value | Rationale |
-|---|---|---|
-| Learning Rate | 1 × 10⁻⁵ | Prevents catastrophic forgetting of 3D priors |
-| Batch Size | 8 | Optimized for VRAM efficiency on transformer blocks |
-| Max Epochs | 15 | Sufficient for the model to see the full Cap3D subset |
-| Train/Val Split | 80/20 | Standard split to monitor generalization |
-
+- **Learning Rate:** 1 × 10⁻⁵ — Prevents catastrophic forgetting of 3D priors
+- **Batch Size:** 8 — Optimized for VRAM efficiency on transformer blocks
+- **Max Epochs:** 15 — Sufficient for the model to see the full Cap3D subset
+- **Train/Val Split:** 80/20 — Standard split to monitor generalization
+  
 ---
 
 ## Results
 
 ### Shap-E
 
+<div align="center">
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
 | Chamfer Distance ↓ | 0.0334 | 0.0335 | +0.0001 | Geometry |
@@ -128,17 +125,19 @@ python view.py
 | CLIP Similarity ↑ | 0.8106 | **0.8137** | +0.0031 | Semantic |
 | R-Precision ↑ | 0.1600 | 0.1600 | +0.0000 | Semantic |
 | LPIPS ↓ | 0.2624 | 0.2633 | +0.0009 | Perceptual |
+</div>
 
 ### Point-E
-
+<div align="center">
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
 | Chamfer Distance ↓ | 0.0079 | **0.0071** | -0.0008 | Geometry |
 | CLIP Score ↑ | 0.2650 | **0.2970** | +0.0320 | Semantic |
 | CLIP Similarity ↑ | 0.9550 | **0.9560** | +0.0010 | Semantic |
+</div>
 
 ### Fantasia3D (Zero-Shot Only)
-
+<div align="center">
 | Metric | Zero-Shot | Category |
 |---|---|---|
 | Chamfer Distance ↓ | 0.4912 | Geometry |
@@ -146,6 +145,7 @@ python view.py
 | CLIP Score ↑ | 0.1902 | Semantic |
 | CLIP Similarity ↑ | 0.7450 | Semantic |
 | LPIPS ↓ | 0.3206 | Perceptual |
+</div>
 
 Fine-tuning shows the clearest gains for **Point-E** (CLIP Score +0.032, Chamfer Distance -0.0008). **Shap-E** sees modest geometric improvements (F-Score +0.0031) with marginal semantic change. **Fantasia3D** underperforms on geometric metrics, reflecting its sensitivity to optimization stability.
 
@@ -189,7 +189,7 @@ AIGM-Cap3D/
 │       ├── eval_results_finetuned.csv
 │       └── eval_results_zeroshot.csv
 ├── cap3d_splits.py
-├── downloaded_objects_split.json         # Not tracked
+├── downloaded_objects_split.json         
 ├── requirements.txt
 └── .gitignore
 ```
