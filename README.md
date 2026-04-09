@@ -173,11 +173,15 @@ Detailed Shap-E results: `src/shap-e-zeroshot/eval_results_zeroshot.csv` · `src
 Below is a qualitative comparison of Cap3D ground truth meshes, zero-shot generations, and fine-tuned
 generations conditioned on the original Cap3D caption.
 
-![Qualitative Comparison](src/shap-e-zeroshot/predicted_previews/comparison_sample.png)
+### Qualitative Comparison
 
-> *Left to right: Cap3D Ground Truth · Shap-E Zero-Shot · Shap-E Fine-Tuned*
+| Caption | Ground Truth | Zero-Shot | Fine-Tuned |
+|---|---|---|---|
+| Human lungs with the trachea and bronchi visible. | ![](src/shap-e-zeroshot/previews_gif/00_748eefe0.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/00_748eefe0.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/00_748eefe0.gif) |
+| A small indoor space with yellowish walls, a tiled ceiling, and a carpeted floor containing office furniture and equipment. | ![](src/shap-e-zeroshot/previews_gif/01_52903d6a.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/01_52903d6a.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/01_52903d6a.gif) |
+| A black dragon with wings and a horned skull. | ![](src/shap-e-zeroshot/previews_gif/02_d4894bff.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/02_d4894bff.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/02_d4894bff.gif) |
 
-See [`comparison.ipynb`](src/shap-e-zeroshot/comparison.ipynb) for the full visual analysis.
+> Note: GitHub does not render GIFs inline in markdown tables on some viewers. For the full interactive comparison see [`comparison.ipynb`](src/shap-e-zeroshot/comparison.ipynb).
 
 ---
 
