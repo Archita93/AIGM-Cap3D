@@ -110,17 +110,20 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 ### Fine-Tuning
 - **LR:** 1 × 10⁻⁵ · **Batch Size:** 8 · **Epochs:** 15 · **Split:** 80/20
 
-### Training Curve
-![Training Curve](src/shap-e-zeroshot/graphs/training_curve_best.png)
+<div align="center">
+<img src="https://raw.githubusercontent.com/Archita93/AIGM-Cap3D/main/src/shap-e-zeroshot/graphs/training_curve_best.png" width="500"/>
+</div>
 
 ---
+
 ## Results
 
-<table>
+<table style="border: none; border-collapse: collapse; width: 100%;">
 <tr>
-<td>
+<td style="border: none; vertical-align: top; padding: 10px;">
 
-### Shap-E
+**Shap-E**
+
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
 | Chamfer Distance ↓ | 0.0334 | 0.0335 | +0.0001 | Geometry |
@@ -131,7 +134,7 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 | LPIPS ↓ | 0.2624 | 0.2633 | +0.0009 | Perceptual |
 
 </td>
-<td>
+<td style="border: none; vertical-align: top; padding: 10px;">
 
 ### Fantasia3D (Zero-Shot Only)
 | Metric | Zero-Shot | Category |
