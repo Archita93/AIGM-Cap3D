@@ -17,9 +17,13 @@ elif torch.cuda.is_available():
 else:
     DEVICE = torch.device("cpu")
 
-OUT_DIR = "generated"
-GUIDANCE_SCALE = 15.0       # higher = more faithful to prompt, less diverse
+OUT_DIR = "generated_guidance"
+GUIDANCE_SCALE = 17.5       # higher = more faithful to prompt, less diverse
 NUM_STEPS = 64              # more steps = better quality, slower
+
+# 64, 15
+# 64, 17.5
+# 128, 20 
 
 os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -46,14 +50,15 @@ for item in data:
         continue
 
     print(f"[{stem}] {caption[:80]}")
-    use_fp16 = DEVICE.type == "cuda"
+    # use_fp16 = DEVICE.type == "cuda"
+    BATCH_SIZE=1
 
     latents = sample_latents(
-        batch_size=1,
+        batch_size=BATCH_SIZE,
         model=model,
         diffusion=diffusion,
         guidance_scale=GUIDANCE_SCALE,
-        model_kwargs=dict(texts=[caption]),
+        model_kwargs=dict(texts=[caption] * BATCH_SIZE),
         progress=True,
         clip_denoised=True,
         use_fp16=True,
@@ -64,7 +69,7 @@ for item in data:
         s_churn=0,
     )
 
-    # Save as PLY (can also do .obj or .glb)
+    # Save as OBJ (can also do .obj or .glb)
     out_path = os.path.join(OUT_DIR, f"{stem}.obj")
     t = decode_latent_mesh(xm, latents[0]).tri_mesh()
     with open(out_path, "w") as f:

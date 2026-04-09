@@ -149,15 +149,15 @@ def run(input_dir, out_dir, num_samples, num_frames, resolution, json_path=None)
     if json_path:
         with open(json_path) as f:
             data = json.load(f)
-        items = [(item["uid"], item["caption"]) for item in data["train"] if item["uid"] in index]
+            items = [(item["uid"], item["caption"]) for item in data if item["uid"] in index]
     else:
         # fallback: just use filenames sorted, no captions from JSON
         items = [(stem, None) for stem in sorted(index.keys())]
 
     count = 0
     for uid, json_caption in items:
-        if count >= num_samples:
-            break
+        # if count >= num_samples:
+        #     break
         path = index[uid]
 
         # Try to load caption from same dir or previews dir
