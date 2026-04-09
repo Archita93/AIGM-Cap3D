@@ -1,0 +1,10 @@
+numpy
+tqdm
+torch
+Pillow
+git+https://github.com/openai/CLIP.git
+scipy
+pyrender
+"pyglet<2"
+trimesh
+objaverse
