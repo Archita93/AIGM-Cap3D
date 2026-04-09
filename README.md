@@ -46,7 +46,7 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 | Object | Caption |
 |:---:|---|
-| ![](src/shap-e-zeroshot/previews_gif/105_e922075d.gif) | *"A blue, dinosaur-like creature with a segmented brown shell on its back, detailed with claws on its limbs and tail."* |
+| ![](105_e922075d.gif) | *"A blue, dinosaur-like creature with a segmented brown shell on its back, detailed with claws on its limbs and tail."* |
 
 ---
 
