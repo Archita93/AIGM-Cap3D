@@ -102,20 +102,17 @@ python view.py
 
 ## Methodology
 
-### Shap-E · Zero-Shot Hyperparameters
+Shap-E was fine-tuned using selective parameter tuning — only the final transformer blocks and text-latent projection layers were updated to preserve pre-trained 3D priors while adapting to Cap3D captions.
 
-- **Guidance Scale:** 17.5 — Forces strict adherence to the text prompt
-- **Num Steps:** 64 — Balances generation speed with geometric detail
-- **Sigma Range:** 1e-3 to 160 — Defines the diffusion noise schedule for shape resolution
-- **Evaluation Set:** N = 100 — Results averaged over 100 diverse prompts
+### Zero-Shot
+- **Guidance Scale:** 17.5 · **Num Steps:** 64 · **Sigma Range:** 1e-3 to 160 · **Eval Set:** N = 100
 
-### Shap-E · Fine-Tuning Hyperparameters
+### Fine-Tuning
+- **LR:** 1 × 10⁻⁵ · **Batch Size:** 8 · **Epochs:** 15 · **Split:** 80/20
 
-- **Learning Rate:** 1 × 10⁻⁵ — Prevents catastrophic forgetting of 3D priors
-- **Batch Size:** 8 — Optimized for VRAM efficiency on transformer blocks
-- **Max Epochs:** 15 — Sufficient for the model to see the full Cap3D subset
-- **Train/Val Split:** 80/20 — Standard split to monitor generalization
-  
+### Training Curve
+![Training Curve](src/shap-e-zeroshot/graphs/training_curve_best.png)
+
 ---
 
 ## Results
