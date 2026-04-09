@@ -38,7 +38,7 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 
 
-![Models Overview](text3d.png)
+![Models Overview](assets/text3d.png)
 
 ---
 
@@ -46,13 +46,13 @@ This project investigates these limitations by evaluating and fine-tuning three 
 
 **Cap3D** was chosen for its large-scale captioned 3D data, enabling an in-depth analysis of how richer natural language descriptions affect text-to-3D semantic alignment. It provides per-object captions generated from multi-view renders of Objaverse assets using BLIP-2 and GPT-4.
 
-![Cap3D Sample Objects](cap3d.png)
+![Cap3D Sample Objects](assets/cap3d.png)
 
 **Sample:**
 
 | Object | Caption |
 |:---:|---|
-| ![](105_e922075d.gif) | *"A blue, dinosaur-like creature with a segmented brown shell on its back, detailed with claws on its limbs and tail."* |
+| ![](assets/105_e922075d.gif) | *"A blue, dinosaur-like creature with a segmented brown shell on its back, detailed with claws on its limbs and tail."* |
 
 ---
 
