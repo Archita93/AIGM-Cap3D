@@ -181,8 +181,6 @@ generations conditioned on the original Cap3D caption.
 | A small indoor space with yellowish walls, a tiled ceiling, and a carpeted floor containing office furniture and equipment. | ![](src/shap-e-zeroshot/previews_gif/01_52903d6a.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/01_52903d6a.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/01_52903d6a.gif) |
 | A black dragon with wings and a horned skull. | ![](src/shap-e-zeroshot/previews_gif/02_d4894bff.gif) | ![](src/shap-e-zeroshot/predicted_previews_guidance/02_d4894bff.gif) | ![](src/shap-e-zeroshot/predicted_previews_finetuned/02_d4894bff.gif) |
 
-> Note: GitHub does not render GIFs inline in markdown tables on some viewers. For the full interactive comparison see [`comparison.ipynb`](src/shap-e-zeroshot/comparison.ipynb).
-
 ---
 
 ## Directory Structure
