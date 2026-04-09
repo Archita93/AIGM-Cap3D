@@ -3,8 +3,9 @@
 **Course:** CMPT 420/728 Deep Learning  
 **Authors:** Archita Srivastava, Mohammad Taghizadeh, Sydney Widjaja  
 **Institution:** Simon Fraser University  
-**Slide:** https://docs.google.com/presentation/d/1gyMfiqhIgP-06eg5-a6JMS4QSEVXrBHW5OIouFKaDYU/edit?usp=sharing
-**Project Report:**: https://www.overleaf.com/read/htkfbmdphxkh#9963b5
+
+**Slide:** [View Slides](https://docs.google.com/presentation/d/1gyMfiqhIgP-06eg5-a6JMS4QSEVXrBHW5OIouFKaDYU/edit?usp=sharing)  
+**Project Report:** [Read Report](https://www.overleaf.com/read/htkfbmdphxkh#9963b5)
 ---
 
 ## Overview
