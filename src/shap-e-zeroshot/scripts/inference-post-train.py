@@ -21,11 +21,6 @@ else:
 OUT_DIR = "generated_finetuned"
 GUIDANCE_SCALE = 17.5       # higher = more faithful to prompt, less diverse
 NUM_STEPS = 64              # more steps = better quality, slower
-
-# 64, 15
-# 64, 17.5
-# 128, 20 
-
 os.makedirs(OUT_DIR, exist_ok=True)
 
 print("Loading models...")
