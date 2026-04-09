@@ -16,6 +16,10 @@ the scarcity of high-quality text-3D paired data, reliance on synthetic data and
 to infer 3D structure, and the **Janus problem** - where models lack global geometric coherence and produce
 view-inconsistent shapes.
 
+![Mythical Creature Preview](src/shap-e-zeroshot/previews_gif/03_c74fee4e.gif)
+
+*Figure: A sculpted figure resembling a mythical or fantasy creature with horns, a muscular body, and a flat rectangular base.*
+
 This project investigates these limitations by evaluating and fine-tuning three publicly available
 text-to-3D models on the [Cap3D](https://github.com/crockwell/Cap3D) dataset — a large-scale collection
 of 3D objects from Objaverse paired with detailed natural language captions.
