@@ -107,9 +107,13 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 > **Zero-Shot:** Guidance Scale: 17.5 · Num Steps: 64 · Sigma Range: 1e-3 to 160 · Eval Set: N = 100  
 > **Fine-Tuning:** LR: 1 × 10⁻⁵ · Batch Size: 8 · Epochs: 15 · Split: 80/20
 
+<details>
+<summary>Training Curve</summary>
+<br>
 <div align="center">
 <img src="https://raw.githubusercontent.com/Archita93/AIGM-Cap3D/main/src/shap-e-zeroshot/graphs/training_curve_best.png" width="500"/>
 </div>
+</details>
 
 ---
 
