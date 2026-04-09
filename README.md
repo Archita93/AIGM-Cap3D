@@ -133,19 +133,6 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 </td>
 <td>
 
-### Point-E
-| Metric | Zero-Shot | Fine-Tuned | Delta | Category |
-|---|---|---|---|---|
-| Chamfer Distance ↓ | 0.0079 | **0.0071** | -0.0008 | Geometry |
-| CLIP Score ↑ | 0.2650 | **0.2970** | +0.0320 | Semantic |
-| CLIP Similarity ↑ | 0.9550 | **0.9560** | +0.0010 | Semantic |
-
-</td>
-</tr>
-</table>
-
-<div align="center">
-
 ### Fantasia3D (Zero-Shot Only)
 | Metric | Zero-Shot | Category |
 |---|---|---|
@@ -154,6 +141,19 @@ Shap-E was fine-tuned using selective parameter tuning — only the final transf
 | CLIP Score ↑ | 0.1902 | Semantic |
 | CLIP Similarity ↑ | 0.7450 | Semantic |
 | LPIPS ↓ | 0.3206 | Perceptual |
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+### Point-E
+| Metric | Zero-Shot | Fine-Tuned | Delta | Category |
+|---|---|---|---|---|
+| Chamfer Distance ↓ | 0.0079 | **0.0071** | -0.0008 | Geometry |
+| CLIP Score ↑ | 0.2650 | **0.2970** | +0.0320 | Semantic |
+| CLIP Similarity ↑ | 0.9550 | **0.9560** | +0.0010 | Semantic |
 
 </div>
 
