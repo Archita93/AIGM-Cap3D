@@ -1,7 +1,6 @@
 .venv/
 venv/
 env/
-
 __pycache__/
 *.pyc
 *.pyo
@@ -12,27 +11,40 @@ __pycache__/
 *.log
 
 .DS_Store
-
 .vscode/
-
 .idea/
 
-*.json
-*.csv
-*.tsv
-*.h5
 *.pt
 *.pth
+*.ckpt
+*.h5
 
+checkpoints/
+checkpoints_optim_2/
+checkpoints_optim_3/
+
+*.csv
+*.tsv
+*.json
 data/
 datasets/
-outputs/
-checkpoints/
 
-*.ckpt
+blender-3.3.1-linux-x64/
+*.tar.xz
 
-tmp/
-temp/
+shap_e_model_cache/
+latents/
+latents_cache/
+shapelatents/
+
+generated/
+generated_128/
+generated_finetuned/
+generated_guidance/
+predicted_previews/
+predicted_previews_128/
+predicted_previews_finetuned/
+predicted_previews_guidance/
+previews_gif/
 
 src/shap-e-zeroshot/shap-e/
-cap3d_split.json

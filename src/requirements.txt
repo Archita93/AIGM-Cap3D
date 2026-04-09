@@ -1,2 +1,10 @@
 objaverse
 objaverse-xl
+yaml
+torch
+ipywidgets
+trimesh
+pyrender
+pyopengl==3.1.5
+lpips
+huggingface_hub
