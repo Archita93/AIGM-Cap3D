@@ -104,11 +104,8 @@ python view.py
 
 Shap-E was fine-tuned using selective parameter tuning — only the final transformer blocks and text-latent projection layers were updated to preserve pre-trained 3D priors while adapting to Cap3D captions.
 
-### Zero-Shot
-- **Guidance Scale:** 17.5 · **Num Steps:** 64 · **Sigma Range:** 1e-3 to 160 · **Eval Set:** N = 100
-
-### Fine-Tuning
-- **LR:** 1 × 10⁻⁵ · **Batch Size:** 8 · **Epochs:** 15 · **Split:** 80/20
+> **Zero-Shot:** Guidance Scale: 17.5 · Num Steps: 64 · Sigma Range: 1e-3 to 160 · Eval Set: N = 100  
+> **Fine-Tuning:** LR: 1 × 10⁻⁵ · Batch Size: 8 · Epochs: 15 · Split: 80/20
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Archita93/AIGM-Cap3D/main/src/shap-e-zeroshot/graphs/training_curve_best.png" width="500"/>
