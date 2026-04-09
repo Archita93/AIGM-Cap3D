@@ -113,10 +113,10 @@ python view.py
 ---
 
 ## Results
-
 ### Shap-E
 
 <div align="center">
+
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
 | Chamfer Distance ↓ | 0.0334 | 0.0335 | +0.0001 | Geometry |
@@ -125,19 +125,25 @@ python view.py
 | CLIP Similarity ↑ | 0.8106 | **0.8137** | +0.0031 | Semantic |
 | R-Precision ↑ | 0.1600 | 0.1600 | +0.0000 | Semantic |
 | LPIPS ↓ | 0.2624 | 0.2633 | +0.0009 | Perceptual |
+
 </div>
 
 ### Point-E
+
 <div align="center">
+
 | Metric | Zero-Shot | Fine-Tuned | Delta | Category |
 |---|---|---|---|---|
 | Chamfer Distance ↓ | 0.0079 | **0.0071** | -0.0008 | Geometry |
 | CLIP Score ↑ | 0.2650 | **0.2970** | +0.0320 | Semantic |
 | CLIP Similarity ↑ | 0.9550 | **0.9560** | +0.0010 | Semantic |
+
 </div>
 
 ### Fantasia3D (Zero-Shot Only)
+
 <div align="center">
+
 | Metric | Zero-Shot | Category |
 |---|---|---|
 | Chamfer Distance ↓ | 0.4912 | Geometry |
@@ -145,7 +151,9 @@ python view.py
 | CLIP Score ↑ | 0.1902 | Semantic |
 | CLIP Similarity ↑ | 0.7450 | Semantic |
 | LPIPS ↓ | 0.3206 | Perceptual |
+
 </div>
+
 
 Fine-tuning shows the clearest gains for **Point-E** (CLIP Score +0.032, Chamfer Distance -0.0008). **Shap-E** sees modest geometric improvements (F-Score +0.0031) with marginal semantic change. **Fantasia3D** underperforms on geometric metrics, reflecting its sensitivity to optimization stability.
 
